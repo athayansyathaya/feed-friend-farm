@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SmartFeed Calculation System - Cartoon Farm Theme
+   Sky blue, grass green, barn red, hay cream. All HSL.
+*/
+
+@layer base {
+  :root {
+    /* Surface - warm cream paper */
+    --background: 42 60% 96%;
+    --foreground: 140 35% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 140 35% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 35% 16%;
+
+    /* Brand - farm leaf green */
+    --primary: 130 45% 32%;
+    --primary-foreground: 42 60% 97%;
+    --primary-glow: 95 55% 55%;
+
+    /* Secondary - sky blue tint */
+    --secondary: 200 70% 90%;
+    --secondary-foreground: 210 40% 22%;
+
+    --muted: 42 40% 92%;
+    --muted-foreground: 140 12% 38%;
+
+    /* Accent - barn red */
+    --accent: 4 72% 52%;
+    --accent-foreground: 42 60% 97%;
+
+    /* Sky blue hero bg */
+    --sky: 200 80% 78%;
+    --sky-foreground: 210 50% 20%;
+
+    /* Hay yellow */
+    --hay: 42 88% 62%;
+    --hay-foreground: 140 35% 16%;
+
+    --destructive: 4 72% 48%;
+    --destructive-foreground: 42 60% 97%;
+
+    --border: 42 30% 84%;
+    --input: 42 30% 88%;
+    --ring: 130 45% 32%;
+
+    --radius: 1.25rem;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(200 80% 82%) 0%, hsl(95 55% 75%) 100%);
+    --gradient-warm: linear-gradient(160deg, hsl(42 60% 96%) 0%, hsl(42 70% 88%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(42 50% 96%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(200 85% 85%) 0%, hsl(200 70% 92%) 100%);
+    --gradient-grass: linear-gradient(180deg, hsl(95 50% 60%) 0%, hsl(130 45% 38%) 100%);
+
+    /* Shadows - chunky cartoon */
+    --shadow-soft: 0 4px 0 0 hsl(140 35% 16% / 0.08);
+    --shadow-card: 0 6px 0 0 hsl(140 35% 16% / 0.12);
+    --shadow-elevated: 0 10px 0 0 hsl(140 35% 16% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 95 20% 10%;
+    --foreground: 40 30% 94%;
+    --card: 95 18% 14%;
+    --card-foreground: 40 30% 94%;
+    --popover: 95 18% 14%;
+    --popover-foreground: 40 30% 94%;
+    --primary: 88 45% 55%;
+    --primary-foreground: 95 25% 10%;
+    --secondary: 95 15% 20%;
+    --secondary-foreground: 40 30% 94%;
+    --muted: 95 15% 18%;
+    --muted-foreground: 40 15% 65%;
+    --accent: 38 75% 58%;
+    --accent-foreground: 95 30% 14%;
+    --destructive: 8 62% 45%;
+    --destructive-foreground: 40 40% 97%;
+    --border: 95 15% 22%;
+    --input: 95 15% 22%;
+    --ring: 88 45% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4 {
+    @apply tracking-tight;
+  }
+}
