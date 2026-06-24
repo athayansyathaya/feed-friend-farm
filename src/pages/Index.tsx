@@ -7,6 +7,7 @@ import { LivestockGrid } from "@/components/LivestockGrid";
 import { Guide } from "@/components/Guide";
 import { HistorySection } from "@/components/HistorySection";
 import { Footer } from "@/components/Footer";
+import { ChatWidget } from "@/components/ChatWidget";
 
 const Index = () => {
   const [refreshKey, setRefreshKey] = useState(0);
@@ -23,6 +24,7 @@ const Index = () => {
         <HistorySection refreshKey={refreshKey} />
       </main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 };
